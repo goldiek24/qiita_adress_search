@@ -21,7 +21,7 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
   // MapOptionsをデフォルト値から変更する場合各パラメータに値を設定
   // 中心点の緯度経度を設定
   mapOptions.center = new ZDC.LatLng(lat, lng);
-  mapOptions.zipsMapType = 'VeAmBrmV'
+  mapOptions.zipsMapType = 'kP8KjZdn'
   mapOptions.mouseWheelReverseZoom = true; // ★マウスホイールのズーム方向の反転を指定
 
 
@@ -33,7 +33,7 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
       // Success callback
       // コントロールを追加する
       // 左上 拡大縮小ボタン表示
-      map.addControl(new ZDC.ZoomButton('bottom-right'));
+      map.addControl(new ZDC.ZoomButton('bottom-right', new ZDC.Point(-20, -35)));
       // 右上 コンパス表示
       map.addControl(new ZDC.Compass('top-right'));
       // 左下 スケールバー表示
